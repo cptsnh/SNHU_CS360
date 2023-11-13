@@ -2,7 +2,8 @@
 ## CS360 Mobile Architecture and Programming
 
 ### Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?  
-<< need to finish >>  
+The main goal of this application is to provide a way for customers to maintain an inventory of items stored in a typical warehouse or home environment. The major components include account creation, maintaining a list of items, and adding, removing, and modifying the list items. The app will also have an SMS messaging feature.
+The application is intended to be used by anybody who needs a way to track inventory. This might include a typical warehouse logistician who needs a mobile inventory solution, or a small-business owner who wants a simplified inventory tracking app for their office, or even a person who just wants to inventory items in their house or a self-storage unit.  
   
 ### What screens and features were necessary to support user needs and produce a user-centered UI for the app? How did your UI designs keep users in mind? Why were your designs successful?  
 As I learned throughout the course, it makes sense to consolidate tasks into activities and run them using fragments. This makes the process of using the app much easier and pleasant for the customer because they don’t have to traverse many different screens to accomplish a goal. The main path the customer traverses in this app is logging in, and then adding, deleting, or editing an item in the list. I accomplished this with one activity. That activity contains a fragment for each of the tasks listed earlier. There are additional actions that a customer can perform, but they are activities or fragments that branch from the main path. I feel like this helps maintains focus on the main goal of the app for the customer.  
