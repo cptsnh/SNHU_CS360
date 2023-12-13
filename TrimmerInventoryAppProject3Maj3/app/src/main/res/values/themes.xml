@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InventoryApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackground">#f0f0ff</item>
+        <item name="android:textColor">@color/blueberry_900</item>
+        <item name="android:textSize">20sp</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="PrimaryColoredButton" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPeach</item>
+        <item name="colorControlHighlight">@color/colorRed</item>
+    </style>
+
+
+    <style name="Theme.InventoryApp" parent="Base.Theme.InventoryApp" />
+
+    <style name="TestStyle" parent="Theme.AppCompat">
+        <item name="cardViewStyle">@style/TestStyle.CardView.BackColor</item>
+    </style>
+
+    <style name="TestStyle.CardView.BackColor" parent="CardView">
+        <item name="cardBackgroundColor">#ee139200</item>
+
+        <!-- F3921F = orange -->
+        <!--        <item name="cardBackgroundColor">#e1f0f8ff</item> -->
+    </style>
+
+</resources>

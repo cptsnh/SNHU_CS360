@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginFragment2">
+
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.christrimmer.inventoryapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment2_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.christrimmer.inventoryapp.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.christrimmer.inventoryapp.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <argument
+            android:name="customer1"
+            app:argType="com.christrimmer.inventoryapp.Customer"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_listFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <argument
+            android:name="itemAdd"
+            app:argType="com.christrimmer.inventoryapp.Item"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_listFragment_to_editItemFragment"
+            app:destination="@id/editItemFragment" />
+        <argument
+            android:name="itemEdit"
+            app:argType="com.christrimmer.inventoryapp.Item"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_listFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.christrimmer.inventoryapp.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <argument
+            android:name="customerAbout"
+            app:argType="com.christrimmer.inventoryapp.Customer"
+            app:nullable="true"
+            android:defaultValue="@null"
+            />
+        <action
+            android:id="@+id/action_aboutFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.christrimmer.inventoryapp.AddItemFragment"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="customerAddItem"
+            app:argType="com.christrimmer.inventoryapp.Customer"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/editItemFragment"
+        android:name="com.christrimmer.inventoryapp.EditItemFragment"
+        android:label="fragment_edit_item"
+        tools:layout="@layout/fragment_edit_item" >
+        <action
+            android:id="@+id/action_editItemFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="customerEditItem"
+            app:argType="com.christrimmer.inventoryapp.Customer"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="itemEditItem"
+            app:argType="com.christrimmer.inventoryapp.Item"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

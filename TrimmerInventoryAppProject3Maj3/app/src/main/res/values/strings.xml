@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">This Inventory!</string>
+
+    <!-- AppBar strings -->
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+
+    <!-- About strings -->
+    <string name="welcome">Hello, </string>
+    <string name="tap_add_item">to add an item</string>
+    <string name="tap_edit_item">Tap a row to edit the item</string>
+    <string name="tap_delete_an_item">Tap x to delete an item</string>
+    <string name="tap_edit_quantities">Tap + or - to edit quantities</string>
+    <string name="version">Version: 1.0</string>
+    <string name="developer">By: Chris Trimmer</string>
+    <string name="contentDescSMS">SMS Icon</string>
+
+
+    <!-- Login strings -->
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_phonenumber">Enter Phone Number</string>
+    <string name="eight_character_minimum">Eight character minimum</string>
+
+    <!-- ListFrag strings -->
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="delete">X</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="enter_description">Enter description</string>
+    <string name="done">Done</string>
+    <string name="add">Add</string>
+
+    <!-- SMS strings -->
+    <string name="smsRequired">SMS is required for some App features</string>
+    <string name="smsMsg">When enabled, you will be notified when inventory items reach zero</string>
+
+    <!-- Misc strings -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back2ButtonText">Back</string>
+    <string name="addItemFab">Add an Item</string>
+    <string name="contentDescription">This Inventory Logo</string>
+    <string name="tap">Tap</string>
+    <string name="for_privacy_settings">for Privacy Settings</string>
+    <string name="zero">0</string>
+    <string name="cancel">Cancel</string>
+    <string name="sms">SMS</string>
+
+</resources>
